@@ -1,0 +1,67 @@
+﻿{
+   "CodeGenerationMode": 2,
+   "ContextClassName": "SmartERGardenContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "SmartER_Garden_Models",
+   "ProjectRootNamespace": "SmartER_Garden_Library",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "public.hat_eintrag",
+         "ObjectType": 0
+      },
+      {
+         "Name": "public.standort",
+         "ObjectType": 0
+      },
+      {
+         "Name": "public.nicht_essbare_pflanzen",
+         "ObjectType": 0
+      },
+      {
+         "Name": "public.pflanze",
+         "ObjectType": 0
+      },
+      {
+         "Name": "public.essbare_pflanze",
+         "ObjectType": 0
+      },
+      {
+         "Name": "public.eintrag",
+         "ObjectType": 0
+      },
+      {
+         "Name": "public.hat_züchter",
+         "ObjectType": 0
+      },
+      {
+         "Name": "public.züchter",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "SmartERGarden",
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoConstructor": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}
