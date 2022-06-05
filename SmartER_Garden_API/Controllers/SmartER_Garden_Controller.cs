@@ -39,19 +39,19 @@ namespace SmartER_Garden_API.Controllers
             return Ok(context.Standort);
         }
 
-        [HttpGet("standort")]
+        [HttpGet("essbarepflanze")]
         public ActionResult<List<Standort>> GetEssbarePflanzen()
         {
             return Ok(context.EssbarePflanze);
         }
 
-        [HttpGet("standort")]
+        [HttpGet("nichtessbarepfkanzen")]
         public ActionResult<List<Standort>> GetNichtEssen()
         {
             return Ok(context.NichtEssbarePflanzen);
         }
 
-        [HttpPatch("richtigerpfad")]
+        [HttpPatch("einträge/{eid}")]
         public ActionResult PatchEintrag(string eintragsname, int höhe, string lichtzyklus, string düngerschema, int wasserzufuhr, int wochenzahl, DateTime datum)
         {
             var eintrag = context.Eintrag.Where(a => a.EintragsName = eintragsname).FirstorDefault();
@@ -74,7 +74,7 @@ namespace SmartER_Garden_API.Controllers
             }
         }
 
-        [HttpPost("richtigerpfad")]
+        [HttpPost("einträge/{eid}")]
         public ActionResult<Eintrag> PostEintrag(string eintragsname, int höhe, string lichtzyklus, string düngerschema, int wasserzufuhr, int wochenzahl, DateTime datum)
         {
             var id = context.Eintrag.Max(a => a.Id) + 1;
@@ -83,7 +83,7 @@ namespace SmartER_Garden_API.Controllers
 
         }
 
-        [HttpPost("richtigerpfad")]
+        [HttpPost("pflanzen/{pfid}")]
         public ActionResult<Pflanze> PostPflanze(string name, string oberunterirdisch, DateTime pflanzbeginn, DateTime pflanzende)
         {
             var id = context.Pflanze.Max(a => a.Id) + 1;
@@ -92,7 +92,7 @@ namespace SmartER_Garden_API.Controllers
 
         }
 
-        [HttpPost("richtigerpfad")]
+        [HttpPost("züchter/{zid}")]
         public ActionResult<Züchter> PostEintrag(string name, string beschreibung, string anschrift)
         {
             var id = context.Eintrag.Max(a => a.Id) + 1;
@@ -101,7 +101,7 @@ namespace SmartER_Garden_API.Controllers
 
         }
 
-        [HttpPost("richtigerpfad")]
+        [HttpPost("standort/{stid}")]
         public ActionResult<Standort> PostStandort(string name, string beschreibung)
         {
             var id = context.Eintrag.Max(a => a.Id) + 1;
@@ -109,7 +109,7 @@ namespace SmartER_Garden_API.Controllers
             return Ok(standort);
         }
 
-        [HttpDelete("richtigerpfad")]
+        [HttpDelete("einträge/{eid}")]
         public ActionResult DeleteEintrag(string eintragsname)
         {
             var eintrag = context.Eintrag.Where(a => a.EintragsName = eintragsname).FirstorDefault();
