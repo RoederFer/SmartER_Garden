@@ -12,12 +12,22 @@ namespace SmartER_Garden_Library.SmartER_Garden_Models
             Standort = new HashSet<Standort>();
         }
 
+        public Pflanze(object id, string name, string oberunterirdisch, DateTime pflanzbeginn, DateTime pflanzende)
+        {
+            Id = id;
+            Name = name;
+            OberUnterirdisch = oberunterirdisch;
+            Pflanzbeginn = pflanzbeginn;
+            Pflanzende = pflanzende;
+        }
+
         public int Pfid { get; set; }
         public string Name { get; set; }
         public string OberUnterirdisch { get; set; }
-        public DateOnly Pflanzbeginn { get; set; }
-        public DateOnly Pflanzende { get; set; }
+        public DateTime Pflanzbeginn { get; set; }
+        public DateTime Pflanzende { get; set; }
 
         public virtual ICollection<Standort> Standort { get; set; }
+        public object Id { get; }
     }
 }

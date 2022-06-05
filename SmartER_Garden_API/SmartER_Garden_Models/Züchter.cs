@@ -7,9 +7,18 @@ namespace SmartER_Garden_Library.SmartER_Garden_Models
 {
     public partial class Züchter
     {
+        public Züchter(object id, string name, string beschreibung, string anschrift)
+        {
+            Id = id;
+            Name = name;
+            Beschreibung = beschreibung;
+            Anschrift = anschrift;
+        }
+
         public int Zid { get; set; }
         public string Name { get; set; }
         public string Beschreibung { get; set; }
         public string Anschrift { get; set; }
+        public object Id { get; }
     }
 }
