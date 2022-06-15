@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartER_Garden_Library", "SmartER_Garden\SmartER_Garden_Library.csproj", "{1D3B2604-03DC-47FF-8D21-7D89ADF1A3BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartER_Garden_Library", "SmartER_Garden\SmartER_Garden_Library.csproj", "{1D3B2604-03DC-47FF-8D21-7D89ADF1A3BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartER_Garden_WPF", "SmartER_Garden_WPF\SmartER_Garden_WPF.csproj", "{FEE5A8AB-848E-4303-9B2A-4A370C4EADBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartER_Garden_WPF", "SmartER_Garden_WPF\SmartER_Garden_WPF.csproj", "{FEE5A8AB-848E-4303-9B2A-4A370C4EADBF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6CC6A035-B66F-451F-835D-03653FC7D594} = {6CC6A035-B66F-451F-835D-03653FC7D594}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartER_Garden_API", "SmartER_Garden_API\SmartER_Garden_API.csproj", "{6CC6A035-B66F-451F-835D-03653FC7D594}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartER_Garden_API", "SmartER_Garden_API\SmartER_Garden_API.csproj", "{6CC6A035-B66F-451F-835D-03653FC7D594}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1D3B2604-03DC-47FF-8D21-7D89ADF1A3BA} = {1D3B2604-03DC-47FF-8D21-7D89ADF1A3BA}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

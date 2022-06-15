@@ -1,0 +1,34 @@
+﻿<Window x:Class="SmartER_Garden_WPF.EintragWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmartER_Garden_WPF"
+        mc:Ignorable="d"
+        Title="Eintrag" Height="450" Width="800">
+    <Grid Margin="0,1,0,-1">
+
+        <Rectangle HorizontalAlignment="Center" Height="55" VerticalAlignment="Top" Width="1280" Fill="#FF9FC088"/>
+        <Image HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="46" Margin="29,4,0,0" Source="/plant.png"/>
+        <Label Content="Smarter Garden" HorizontalAlignment="Left" Margin="80,8,0,0" VerticalAlignment="Top" Width="214"  FontSize="25" Foreground="White" FontStyle="Normal">
+            <Label.Style>
+                <Style/>
+            </Label.Style>
+        </Label>
+        <Label Content="Eintragsname:" HorizontalAlignment="Left" Margin="29,70,0,0" VerticalAlignment="Top" FontStyle="Normal"/>
+        <Label Content="Höhe:" HorizontalAlignment="Left" Margin="29,99,0,0" VerticalAlignment="Top" FontStyle="Normal"/>
+        <Label Content="Lichtzyklus:" HorizontalAlignment="Left" Margin="29,128,0,0" VerticalAlignment="Top"/>
+        <Label Content="Düngerschema:" HorizontalAlignment="Left" Margin="29,157,0,0" VerticalAlignment="Top"/>
+        <Label Content="Wasserzufuhr:" HorizontalAlignment="Left" Margin="29,186,0,0" VerticalAlignment="Top"/>
+        <Label Content="Wochenzahl:" HorizontalAlignment="Left" Margin="29,215,0,0" VerticalAlignment="Top"/>
+        <Label Content="Datum: " HorizontalAlignment="Left" Margin="29,244,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbname" HorizontalAlignment="Left" Margin="127,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Height="24"/>
+        <TextBox x:Name="tbhöhe" HorizontalAlignment="Left" Margin="127,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Height="24"/>
+        <TextBox x:Name="tbzyklus" HorizontalAlignment="Left" Margin="127,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Height="24"/>
+        <TextBox x:Name="tbdünger" HorizontalAlignment="Left" Margin="127,157,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Height="24"/>
+        <TextBox x:Name="tbwasser" HorizontalAlignment="Left" Margin="127,186,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Height="24"/>
+        <DatePicker x:Name="dpdatum" Margin="127,244,493,0" VerticalAlignment="Top" Height="24"/>
+        <TextBox x:Name="tbwochen" HorizontalAlignment="Left" Margin="127,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Height="24"/>
+
+    </Grid>
+</Window>
